@@ -109,15 +109,6 @@ Although Linear Regression achieved similar performance, **Ridge Regression** wa
 
 ---
 
-# 🔧 Feature Engineering Techniques
-
-- Extracted **BHK** values from the `size` column  
-- Converted square feet ranges into numeric values  
-- Created a new feature: **price per sqft**  
-- Grouped low-frequency locations into an `"other"` category  
-
----
-
 # ⚙️ Data Preprocessing Pipeline
 
 - Missing value handling using domain-specific logic  
@@ -134,16 +125,31 @@ Although Linear Regression achieved similar performance, **Ridge Regression** wa
 # 📂 Repository Structure
 
 ```text
-Bangalore-House-Price-Prediction/
+House_Price_Predictor/
+│
+├── Client/
+│   ├── assets/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── index.html
+│
+├── Datasets/
+│   └── Bengaluru_House_Data.csv
+│
+├── Scripts/
+│   ├── banglore_home_prices_model.pickle
+│   ├── columns.json
+│   └── House_Price_Predictions.ipynb
 │
 ├── Server/
+│   ├── artifacts/
+│   ├── static/
+│   ├── templates/
+│   ├── form.py
 │   ├── server.py
-│   ├── util.py
-│   └── artifacts/
+│   └── util.py
 │
-├── client/
-├── model/
-├── notebooks/
 ├── Snapshots/
 ├── README.md
 └── requirements.txt
@@ -190,15 +196,6 @@ http://127.0.0.1:5000/
 
 ---
 
-# ⚠️ Project Limitations
-
-- No real-time property data integration  
-- Limited feature set for prediction  
-- Prediction quality depends on dataset accuracy  
-- Performance may vary across unseen locations  
-
----
-
 # 🔮 Future Improvements
 
 - Implement advanced models (XGBoost, Random Forest, Neural Networks)  
@@ -209,9 +206,5 @@ http://127.0.0.1:5000/
 - Enhance UI/UX responsiveness  
 
 ---
-
-# 🏁 Project Note
-
-> This project was originally developed in 2023 as an academic group project and is preserved in its original working state to showcase foundational machine learning concepts, preprocessing workflows, model selection techniques, and Flask-based deployment integration.
 
 ---
