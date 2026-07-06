@@ -241,4 +241,6 @@ This project was developed collaboratively by:
 
 > **EstateIQ** was developed as a **mid-year academic project** to demonstrate the practical application of machine learning and web development. The project showcases data preprocessing, feature engineering, regression modeling, model evaluation, and deployment through a Flask-based web application.
 
+> **Note:** This repository is intended for educational and academic purposes. The application is designed to be run locally following the installation instructions provided above.
+
 ---
