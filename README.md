@@ -1,7 +1,8 @@
 # 🏡 EstateIQ – Bangalore House Price Prediction Web Application
 
-A Flask-based machine learning web application that predicts residential property prices in Bangalore using **Ridge Regression**. 
-The project demonstrates an end-to-end machine learning workflow, from data preprocessing and feature engineering to model deployment through an interactive web interface.
+A Flask-based machine learning web application that predicts house prices in Bangalore using property-related features such as location, total square feet, BHK, and bathrooms.
+
+The project demonstrates a complete end-to-end ML workflow including data preprocessing, feature engineering, regression model evaluation, and deployment through an interactive web interface.
 
 ---
 
@@ -23,19 +24,6 @@ The project demonstrates an end-to-end machine learning workflow, from data prep
 This project uses the **Bengaluru House Price Dataset** for model training and evaluation.
 
 - **Source:** [Bengaluru House Price Dataset (Kaggle)](https://www.kaggle.com/code/viveksingh0510/house-price-prediction-bangalore)
-
----
-
-# 📝 Model Input Features
-
-The prediction model estimates Bangalore house prices using the following property attributes:
-
-| Feature | Description |
-|----------|-------------|
-| **Location** | Area or locality of the property |
-| **Total Square Feet** | Total built-up area (sq. ft.) |
-| **BHK** | Number of bedrooms |
-| **Bathrooms** | Number of bathrooms |
 
 ---
 
@@ -80,7 +68,7 @@ The prediction model estimates Bangalore house prices using the following proper
 
 ### ✅ Final Model Selection
 
-Although Linear Regression achieved similar accuracy, **Ridge Regression** was selected because it achieved performance comparable to Linear Regression while reducing coefficient variance through L2 regularization. This improves stability in the presence of multicollinearity and helps reduce overfitting.
+Although Linear Regression achieved similar accuracy, **Ridge Regression** was selected for its better generalization capability, stability against overfitting, and improved handling of multicollinearity.
 
 ---
 
@@ -137,60 +125,18 @@ House_Price_Predictor/
 
 ---
 
-# ▶️ Installation & Running the Application
-
-## Clone the Repository
-
-```bash
-git clone https://github.com/your-username/House_Price_Predictor.git
-```
-
-## Navigate to the Project
-
-```bash
-cd House_Price_Predictor
-```
-
-## Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-## Start the Flask Server
+# ▶️ Running the Application
 
 ```bash
 cd Server
 python server.py
 ```
 
-Open your browser and visit:
+Then open in your browser:
 
 ```text
 http://127.0.0.1:5000/
 ```
-
----
-
-# 💡 Sample Prediction
-
-### Input
-
-| Property Feature | Value |
-|------------------|-------|
-| Location | Whitefield |
-| Total Area | 1200 sq. ft. |
-| BHK | 2 |
-| Bathrooms | 2 |
-
-### Predicted Output
-
-```text
-Estimated House Price:
-₹84.5 Lakhs
-```
-
-> *Prediction shown above is for demonstration purposes.*
 
 ---
 
@@ -240,7 +186,5 @@ This project was developed collaboratively by:
 # 🏁 Project Note
 
 > **EstateIQ** was developed as a **mid-year academic project** to demonstrate the practical application of machine learning and web development. The project showcases data preprocessing, feature engineering, regression modeling, model evaluation, and deployment through a Flask-based web application.
-
-> **Note:** This repository is intended for educational and academic purposes. The application is designed to be run locally following the installation instructions provided above.
 
 ---
