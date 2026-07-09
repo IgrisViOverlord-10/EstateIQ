@@ -1,17 +1,17 @@
 # 🏡 EstateIQ – Bangalore House Price Prediction Web Application
 
-The project demonstrates an end-to-end machine learning workflow encompassing data preprocessing, feature engineering, regression model evaluation, and deployment through an interactive Flask web application.
+EstateIQ is an end-to-end machine learning application that predicts residential property prices in Bangalore based on key property attributes such as location, total square feet, number of bedrooms (BHK), and bathrooms. The project demonstrates the complete ML lifecycle, from data preprocessing and feature engineering to regression model training, evaluation, and deployment through an interactive Flask web application.
 
 ---
 
 # ✨ Project Highlights
 
-- 🏡 Bangalore House Price Prediction
-- 📊 End-to-End Machine Learning Pipeline
-- 🧹 Data Cleaning & Feature Engineering
-- 📈 Regression Model Comparison
-- 🌐 Flask Web Application
-- ⚡ Real-Time Price Prediction
+- Bangalore House Price Prediction
+- End-to-End Machine Learning Pipeline
+- Data Cleaning & Feature Engineering
+- Regression Model Comparison
+- Flask Web Application
+- Real-Time Price Prediction
 
 ---
 
@@ -49,12 +49,12 @@ Dataset Characteristics:
 
 The prediction model estimates house prices using the following property features:
 
-- 📍 Location
-- 📐 Total Square Feet
-- 🛏 Number of Bedrooms (BHK)
-- 🚿 Number of Bathrooms
+- Total Square Feet
+- Number of Bedrooms (BHK)
+- Number of Bathrooms
+- Location
 
-These features are collected through the web interface and processed before generating the final house price prediction.
+These features are processed by the trained regression model to estimate the property's market value.
 
 ---
 
@@ -98,8 +98,7 @@ The raw housing dataset underwent several preprocessing steps before model train
 - Data preprocessing and feature engineering
 - Regression model comparison and evaluation
 - Ridge Regression model integration
-- Interactive user interface
-- Instant house price estimation
+- Responsive user interface
 
 ---
 
@@ -107,39 +106,28 @@ The raw housing dataset underwent several preprocessing steps before model train
 
 | Model | R² Score |
 |--------|----------|
-| Linear Regression | 0.8234 |
+| Linear Regression | **0.8234** |
 | Lasso Regression | 0.8128 |
-| Ridge Regression | 0.8234 |
+| Ridge Regression | **0.8234** |
 
-### ✅ Final Model Selection
+**Evaluation Metric:** R² (Coefficient of Determination), where values closer to **1.0** indicate better predictive performance.
 
-Although Linear Regression achieved similar accuracy, **Ridge Regression** was selected for its better generalization capability, stability against overfitting, and improved handling of multicollinearity.
+### Final Model
 
----
-
-# 🧠 Why Ridge Regression?
-
-Ridge Regression was selected because it reduces overfitting through L2 regularization while maintaining strong predictive performance. It also handles multicollinearity between housing features more effectively than standard Linear Regression, resulting in a more robust prediction model.
-
----
-
-# 📈 Model Evaluation Metric
-
-Model performance was evaluated using the **R² (Coefficient of Determination)** metric.
-An R² score closer to **1.0** indicates that the model explains a larger proportion of the variance in house prices, resulting in better predictive performance.
+Although Linear Regression and Ridge Regression achieved the same R² score, **Ridge Regression** was selected as the final model due to its L2 regularization, which improves generalization and reduces the impact of multicollinearity.
 
 ---
 
 # ⚙️ Development Workflow
 
-## 📌 Model Development
+## Model Development
 
 - Data cleaning and preprocessing
 - Feature engineering & outlier removal
 - Regression model training and evaluation
 - Final Ridge Regression model selection
 
-## 📌 Deployment & Integration
+## Deployment & Integration
 
 - Model serialization using Pickle (`.pkl`)
 - Flask backend integration
@@ -188,7 +176,7 @@ House_Price_Predictor/
 
 # ▶️ Getting Started
 
-## 1️⃣ Clone the Repository
+## 1) Clone the Repository
 
 ```bash
 git clone https://github.com/Sai-2410/EstateIQ.git
@@ -202,7 +190,7 @@ cd House_Price_Predictor
 
 ---
 
-## 2️⃣ Install Dependencies
+## 2) Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -210,7 +198,7 @@ pip install -r requirements.txt
 
 ---
 
-## 3️⃣ Run the Flask Application
+## 3) Run the Flask Application
 
 Navigate to the server directory:
 
@@ -226,7 +214,7 @@ python server.py
 
 ---
 
-## 4️⃣ Open the Application
+## 4) Open the Application
 
 Open the application in your browser at:
 
@@ -249,27 +237,27 @@ The EstateIQ web application will launch in your browser, allowing users to ente
 
 # 💡 Skills Demonstrated
 
-### 🤖 Machine Learning
+### Machine Learning
 
 - Regression Modeling
 - Feature Engineering
 - Model Evaluation
 - Data Preprocessing
 
-### 📚 Frameworks & Libraries
+### Frameworks & Libraries
 
 - Scikit-Learn
 - Pandas
 - NumPy
 - Flask
 
-### 💻 Software Development
+### Software Development
 
 - Backend & Frontend Integration
 - REST-Based Prediction Workflow
 - Real-Time Inference
 
-### 🛠️ Tools & Deployment
+### Tools & Deployment
 
 - Git & GitHub
 - Jupyter Notebook
@@ -297,22 +285,23 @@ The EstateIQ web application will launch in your browser, allowing users to ente
 - Does not include amenities such as parking, age of property, or nearby facilities
 
 ---
+
 # 👥 Contributors
 
 This project was developed collaboratively by:
 
 | Contributor | Contributions |
-|-------------|-----------------------|
-| **Sai Ravi Chandran** | Designed and developed the frontend, implemented the Flask backend, integrated the trained machine learning model, handled application logic, and built the end-to-end web application. |
-| **Sirisha V Ramana** | Performed data preprocessing, exploratory data analysis (EDA), feature engineering, trained and evaluated multiple machine learning models, and selected the final prediction model. |
-| **Sneha Saphala R** | Assisted with data preparation, model development, testing, validation, and overall project implementation. |
+|-------------|---------------|
+| **Sai R** | Developed the frontend and Flask backend, integrated the trained machine learning model, implemented the application logic, and contributed to end-to-end web application development. |
+| **Sirisha V Ramana** | Performed data preprocessing, exploratory data analysis (EDA), feature engineering, trained and evaluated machine learning models, and contributed to model selection and optimization. |
+| **Sneha Saphala R** | Contributed to data preparation, model testing and validation, prepared project reports and documentation, and supported the overall implementation and evaluation of the project. |
 
 ---
 
 # 📝 Project Note
 
-> **EstateIQ** demonstrates an end-to-end machine learning workflow for predicting Bangalore house prices by integrating data preprocessing, feature engineering, regression modeling, model evaluation, and Flask-based web deployment into a unified application.
+> **EstateIQ** demonstrates how a machine learning model can be transformed into a production-style web application by combining data preprocessing, feature engineering, regression modeling, and Flask-based deployment.
 
-The project showcases how machine learning models can be transformed into interactive web applications capable of providing real-time property price predictions based on user-provided inputs.
+The project highlights the complete workflow from preparing housing data and training predictive models to delivering real-time house price predictions through an interactive web interface.
 
 ---
