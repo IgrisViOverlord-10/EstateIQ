@@ -15,7 +15,7 @@ EstateIQ is an end-to-end machine learning application that predicts residential
 
 ---
 
-# 🚀 Tech Stack
+# 🛠️ Tech Stack
 
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
@@ -28,7 +28,7 @@ EstateIQ is an end-to-end machine learning application that predicts residential
 
 ---
 
-# 📊 Dataset
+# 🗂️ Dataset
 
 This project uses the **Bengaluru House Price Dataset** for model training and evaluation.
 
@@ -45,7 +45,7 @@ Dataset Characteristics:
 
 ---
 
-# 🏠 Prediction Inputs
+# 📥 Prediction Inputs
 
 The prediction model estimates house prices using the following property features:
 
@@ -71,7 +71,7 @@ The raw housing dataset underwent several preprocessing steps before model train
 
 ---
 
-# 🏗 Workflow & Prediction Pipeline
+# 🔄 Workflow & Prediction Pipeline
 
 ```bash
 👤 User Enters Property Details
@@ -91,7 +91,7 @@ The raw housing dataset underwent several preprocessing steps before model train
 
 ---
 
-# ✨ Core Features
+# ⭐ Core Features
 
 - Location-aware house price prediction
 - Real-time prediction through a Flask web application
