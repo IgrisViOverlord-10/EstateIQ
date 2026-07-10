@@ -284,7 +284,7 @@ The EstateIQ web application will launch in your browser, allowing users to ente
 
 This project was developed collaboratively by:
 
-| Contributor | Contributions |
+| Team Member | Role & Contributions |
 |-------------|---------------|
 | **Sai Chandran R** | Developed the frontend and Flask backend, integrated the trained machine learning model, implemented the application logic, and contributed to end-to-end web application development. |
 | **Sirisha V Ramana** | Performed data preprocessing, exploratory data analysis (EDA), feature engineering, trained and evaluated machine learning models, and contributed to model selection and optimization. |
@@ -300,7 +300,7 @@ This project was developed collaboratively by:
 
 # ⚠️ Disclaimer
 
-This project is intended for educational and demonstration purposes only. The predicted property prices are generated using a machine learning model trained on historical Bangalore housing data and should not be considered
+> This project is intended for educational and demonstration purposes only. The predicted property prices are generated using a machine learning model trained on historical Bangalore housing data and should not be considered
 professional real estate valuations or financial advice.
 
 ---
